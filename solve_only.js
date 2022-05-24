@@ -162,3 +162,25 @@ function CuboidMaker(argObj) {
 
   console.log(Obj);
 }
+
+//=============================================>  TASK 4
+class CuboidMakerTwo {
+  constructor(prop) {
+    this.length = prop.length;
+    this.width = prop.width;
+    this.height = prop.height;
+  }
+
+  volume() {
+    return this.length * this.width * this.height;
+  }
+
+  surfaceArea() {
+    return (
+      2 *
+      (this.length * this.width +
+        this.length * this.height +
+        this.width * this.height)
+    );
+  }
+}
